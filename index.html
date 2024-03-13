@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Google Excel</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <button id="cut-button" >
+        <img src="images/cut.png" alt="">    
+    </button>
+    <button id="copy-button">
+        <img src="images/copy.png" alt="">
+    </button>
+    <button id="paste-button">
+        <img src="images/paste.png" alt="">
+    </button>
+
+    <select id="font-style">
+        <option value="serif">Serif</option>
+        <option value="sans-serif">Sans Serif</option>
+        <option value="cursive">Cursive</option>
+        <option value="monospace">Monospace</option>
+    </select>
+
+    <select id="font-size">
+        <option value="14px">14</option>
+        <option value="16px">16</option>
+        <option value="18px">18</option>
+        <option value="20px">20</option>
+        <option value="22px">22</option>
+    </select>      
+
+    <button id="bold-btn">B</button>
+    <button id="italic-btn">I</button>
+    <button id="underline-btn">U</button>
+    <!-- 
+    <div class="allignment">
+        <span class="material-icons"> format_align_left </span>
+        <span class="material-icons"> format_align_center </span>
+        <span class="material-icons"> format_align_right </span>
+    </div> -->
+    
+        <button id="left-align">
+            <img src="images/align-left.png" alt="">
+        </button>
+        <button id="center-align">
+            <img src="images/align-centre.png" alt="">
+        </button>
+        <button id="right-align">
+            <img src="images/align-right.png" alt="">
+        </button>         
+
+
+    <label for="bgColor" ">
+        <img src="images/backgroundColor.png" alt="">
+    </label>
+    <input type="color" id="bgColor">
+
+    <label for="textColor" ">
+        <img src="images/textColor.png" alt="">
+    </label>
+    <input type="color" id="textColor"> 
+    
+    
+
+    <button onclick="downloadJson()">Download</button>
+    <input type="file" id="jsonFile" accept=".json"/>
+    
+
+    <button id="add-sheet-button">Add sheet</button>
+    <h1 id="sheet-no">Sheet No - 1</h1>
+    <div id="button-container">
+        <button id="sheet-1" onclick="viewSheet(event)">Sheet 1</button>
+    </div>
+    
+<table id="my-table">
+<thead>
+    <tr id="table-heading-row">
+        <th id="current-cell">No cell</th>
+
+    </tr>
+    <tbody id="table-body">
+        <!-- <tr>
+                <th>1</th>
+                how many td? ->26
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr> -->
+
+    </tbody>
+</thead>
+</table>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

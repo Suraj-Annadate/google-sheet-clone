@@ -1,0 +1,67 @@
+body{
+    width: 100vh;
+}
+button{
+    margin-top: 5px;
+}
+table{
+    border-collapse: collapse;
+    width: auto;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+th,td{
+    min-width: 80px;
+    border: 1px solid #333;
+}
+td:focus{
+    outline: none;
+}
+#italic-btn{
+    font-style: italic;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+#bold-btn{
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+#underline-btn{
+    font-weight: 900;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ img {
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+img #bgColor, #textColorr{
+    height:18px ;
+    width: 18px;
+}
+
+table{
+    line-height: 18px;
+    
+}
+
+#font-style{
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+#font-size{
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+button{
+    margin-right: 5px;
+}
